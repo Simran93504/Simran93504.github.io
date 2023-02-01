@@ -27,7 +27,7 @@
 <b> STEP 3: MainWindow.xaml.cs </b>
 <ul>
   <li> Create a function ShapeRadios_Click which will execute when will click on any radiobutton , It sets visibility of current selected shape and collapse others.
-  <code>private void ShapeRadios_Click(object sender, RoutedEventArgs e)
+  <pre><code>private void ShapeRadios_Click(object sender, RoutedEventArgs e)
         {
             RectangleShape.Visibility = Visibility.Collapsed;
             EllipseShape.Visibility = Visibility.Collapsed;
@@ -50,7 +50,7 @@
                 default:
                     break;
             }
-        }</code>
+        }</code></pre>
   </li>
   <li> Create a function which will render when we will fill width box. This function sets width of shapes
   <code>private void WidthBox_SelectionChanged(object sender, RoutedEventArgs e)

@@ -14,24 +14,14 @@
  As we have to make an app for drawing shapes (triangle, rectangle, circle) with custom parameters.
 <ul>
   <li>I used two column grid 1:1 in ratio . First column consist of  radiobuttons , labels and textboxes and second half is for drawing shape.
-  <Grid.ColumnDefinitions>
-            <ColumnDefinition MinWidth="500"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+  <img width="196" alt="image" src="https://user-images.githubusercontent.com/109460490/216142120-15e4867a-286a-4b73-a0f1-51f622db66b0.png">
+
 </li>
   <li> Make three radiobuttons and name them as ellipse , rectangle , triangle when will click on any radiobutton some function gets execute to set their visibility
-  <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="20">
-                <RadioButton Name="RectangleRadio" Content="Rectangle" GroupName="ShapeRadios" Margin="10,5,0,0" IsChecked="True" Click="ShapeRadios_Click"/>
-                <RadioButton Name="EllipseRadio" Content="Ellipse" GroupName="ShapeRadios" Margin="20,5,0,0" Click="ShapeRadios_Click"/>
-                <RadioButton Name="TriangleRadio" Content="Triangle" GroupName="ShapeRadios" Margin="20,5,0,0" Click="ShapeRadios_Click"/>
-        </StackPanel>
+  <img width="737" alt="image" src="https://user-images.githubusercontent.com/109460490/216141863-cf4bd2e4-6087-45a1-a082-32f02513e9ba.png">
   </li>
   <li> Make two textboxes labeled with height and width to get parameters for height, width of the choosen shape.
-  <TextBlock x:Name="WidthText1" FontWeight="Bold" Text="" Visibility="Collapsed"></TextBlock>
-                <TextBox x:Name="WidthBox" Width="200px" HorizontalAlignment="Left" SelectionChanged="WidthBox_SelectionChanged" ></TextBox>
-                <Label x:Name="HeightLb" Content="Height" FontSize="14" Margin="0,20,0,0"/>
-                <TextBlock x:Name="HeightText" FontWeight="Bold" Text="" Visibility="Collapsed"></TextBlock>
-                <TextBox x:Name="HeightBox" Width="200px" HorizontalAlignment="Left" SelectionChanged="HeightBox_SelectionChanged" ></TextBox></li> 
+  <img width="640" alt="image" src="https://user-images.githubusercontent.com/109460490/216142044-4505cce0-b8d0-4883-989a-0b3135c992be.png"></li> 
 </ul>
 
 <b> STEP 3: MainWindow.xaml.cs </b>

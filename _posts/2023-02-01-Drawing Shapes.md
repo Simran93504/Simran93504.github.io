@@ -8,7 +8,7 @@
   <li> Go to Project >> Add References >> Search: System Drawing ; Install System Drawing. </li>
   <li> Go to Tools >> NuGet Package Manager >> Manage Packages... >>Search for toolkit ; install Extended WPF Toolkit.
 </ul>
-
+<br>
 <b> STEP 2 : MainWindow.xaml </b>
  In this we make layout for elements and identufy all the window elements ( radiobutton , textbox etc) we need in our app and location where to place them.
  As we have to make an app for drawing shapes (triangle, rectangle, circle) with custom parameters.
@@ -23,7 +23,7 @@
   <li> Make two textboxes labeled with height and width to get parameters for height, width of the choosen shape.
   <img width="640" alt="image" src="https://user-images.githubusercontent.com/109460490/216142044-4505cce0-b8d0-4883-989a-0b3135c992be.png"></li> 
 </ul>
-
+<br>
 <b> STEP 3: MainWindow.xaml.cs </b>
 <ul>
   <li> Create a function ShapeRadios_Click which will execute when will click on any radiobutton , It sets visibility of current selected shape and collapse others.

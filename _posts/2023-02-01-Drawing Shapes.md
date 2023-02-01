@@ -14,27 +14,13 @@
  As we have to make an app for drawing shapes (triangle, rectangle, circle) with custom parameters.
 <ul>
   <li>I used two column grid 1:1 in ratio . First column consist of  radiobuttons , labels and textboxes and second half is for drawing shape.
-    <pre><code>
-  <Grid.ColumnDefinitions>
-            <ColumnDefinition MinWidth="500"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-</pre></code>
+    <img width="245" alt="image" src="https://user-images.githubusercontent.com/109460490/216147383-34bc3174-8919-4c08-8cfe-f79057191f46.png">
 </li>
   <li> Make three radiobuttons and name them as ellipse , rectangle , triangle when will click on any radiobutton some function gets execute to set their visibility
-  <pre><code><StackPanel Orientation="Horizontal" Grid.Column="0" Margin="20">
-                <RadioButton Name="RectangleRadio" Content="Rectangle" GroupName="ShapeRadios" Margin="10,5,0,0" IsChecked="True" Click="ShapeRadios_Click"/>
-                <RadioButton Name="EllipseRadio" Content="Ellipse" GroupName="ShapeRadios" Margin="20,5,0,0" Click="ShapeRadios_Click"/>
-                <RadioButton Name="TriangleRadio" Content="Triangle" GroupName="ShapeRadios" Margin="20,5,0,0" Click="ShapeRadios_Click"/>
-        </StackPanel></pre></code>
+  <img width="746" alt="image" src="https://user-images.githubusercontent.com/109460490/216147468-ae5f14eb-451c-4ff8-8e5d-2c6196bfa5d4.png">
   </li>
   <li> Make two textboxes labeled with height and width to get parameters for height, width of the choosen shape.
-  <pre><code><TextBlock x:Name="WidthText1" FontWeight="Bold" Text="" Visibility="Collapsed"></TextBlock>
-                <TextBox x:Name="WidthBox" Width="200px" HorizontalAlignment="Left" SelectionChanged="WidthBox_SelectionChanged" ></TextBox>
-                <Label x:Name="HeightLb" Content="Height" FontSize="14" Margin="0,20,0,0"/>
-                <TextBlock x:Name="HeightText" FontWeight="Bold" Text="" Visibility="Collapsed"></TextBlock>
-                <TextBox x:Name="HeightBox" Width="200px" HorizontalAlignment="Left" SelectionChanged="HeightBox_SelectionChanged" ></TextBox>
-                </pre></code></li> 
+  <img width="624" alt="image" src="https://user-images.githubusercontent.com/109460490/216147594-1b689fa3-163e-4ba2-b5d3-9c8f57d2d110.png"></li> 
 </ul>
 <br>
 <b> STEP 3: MainWindow.xaml.cs </b>

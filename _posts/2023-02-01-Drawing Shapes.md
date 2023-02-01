@@ -6,7 +6,7 @@
 </li>
  <li> Enter a name for application and create</li> 
   <li> Go to Project >> Add References >> Search: System Drawing ; Install System Drawing. </li>
-  <li> Go to Tools >> NuGet Package Manager >> Manage Packages... >>Search for toolkit ; install Extended WPF Toolkit.
+  <li> Go to Tools >> NuGet Package Manager >> Manage Packages... >>Search for toolkit ; install Extended WPF Toolkit.</li>
 </ul>
 <br>
 <b> STEP 2 : MainWindow.xaml </b>
@@ -27,7 +27,7 @@
 <b> STEP 3: MainWindow.xaml.cs </b>
 <ul>
   <li> Create a function ShapeRadios_Click which will execute when will click on any radiobutton , It sets visibility of current selected shape and collapse others.
-  ```private void ShapeRadios_Click(object sender, RoutedEventArgs e)
+  <code>private void ShapeRadios_Click(object sender, RoutedEventArgs e)
         {
             RectangleShape.Visibility = Visibility.Collapsed;
             EllipseShape.Visibility = Visibility.Collapsed;
@@ -50,10 +50,10 @@
                 default:
                     break;
             }
-        }```
+        }</code>
   </li>
   <li> Create a function which will render when we will fill width box. This function sets width of shapes
-  ```private void WidthBox_SelectionChanged(object sender, RoutedEventArgs e)
+  <code>private void WidthBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
             double.TryParse(WidthBox.Text, out width);
             RectangleShape.Width = width;
@@ -68,9 +68,9 @@
             newpoints.Add(new System.Windows.Point(width/2,height));
             newpoints.Add(new System.Windows.Point(width, 0));
             TriangleShape.Points = newpoints;
-        }```</li>
+        }</code></li>
   <li>  Create a function which will render when we will fill height box. This function sets height of shapes
-  ```private void HeightBox_SelectionChanged(object sender, RoutedEventArgs e)
+  <code>private void HeightBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
             double.TryParse(HeightBox.Text, out height);
             RectangleShape.Height = height;
@@ -84,7 +84,7 @@
             newpoints.Add(new System.Windows.Point(width / 2, height));
             newpoints.Add(new System.Windows.Point(width, 0));
             TriangleShape.Points = newpoints;
-        }```</li>
+        }</code></li>
   
 </ul>
 <b>STEP 4: Testing </b>

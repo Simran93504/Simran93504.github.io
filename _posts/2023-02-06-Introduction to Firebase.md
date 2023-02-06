@@ -1,17 +1,17 @@
-<b># What is Firebase? </b>
+<b> What is Firebase? </b>
   <ul>
     <li>Firebase is a product of Google which helps developers to build, manage, and grow their apps easily.</li>
     <li>It helps developers to build their apps faster and in a more secure way.</li>
     <li>No programming is required on the firebase side which makes it easy to use its features more efficiently.</li>
     <li>It provides cloud storage. It uses NoSQL for the database for the storage of data.</li> </ul>
  <br> <br>
-  <b>## Commonly Faced Challenges </b>
+  <b> Commonly Faced Challenges </b>
   ![image](https://user-images.githubusercontent.com/109460490/217017761-a2a33070-96f0-4ec2-8b43-05b89d062062.png)
   <br> <br>
-  <b> ## Mobile App Requirements </b>
+  <b>  Mobile App Requirements </b>
 ![image](https://user-images.githubusercontent.com/109460490/217017960-f33de25e-2bfd-4aed-98fb-bd8bf4c4d9d6.png)
 <br> <br>
-<b>## Features of Firebase </b>
+<b> Features of Firebase </b>
 <ul> <li> <i> Firebase Authentication: </i> 
   <img src ="https://user-images.githubusercontent.com/109460490/217018757-00f77560-25cf-4196-91c5-e2ccc488cb19.png" alt ="loading">
 <br>
@@ -50,7 +50,7 @@
                                                                                                                                      
 
   </ul>
-  ## Brands that Use Firebase 
+  <b> Brands that Use Firebase </b>
   <img src="https://user-images.githubusercontent.com/109460490/217043321-3925ccb6-4cc2-4c42-8038-cd9e37e75b03.png" alt ="loading" >
 
     

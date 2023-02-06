@@ -32,13 +32,13 @@
   <img src = "https://user-images.githubusercontent.com/109460490/217023097-b8538ae4-52a7-4689-bece-0b90fa1b5606.png" alt = "loading"> </li> 
   <br> <br>
   <li> <i> Firebase Test Lab: </i> 
-    <img src ="https://user-images.githubusercontent.com/109460490/217033265-ba5fa257-09a8-4186-b6f7-96b3adffb6a2.png" alt = loading"> </li>
+    Firebase Test Lab is a cloud-based app testing infrastructure that lets you test your app on a range of devices and configurations, so you can get a better idea of how it'll perform in the hands of live users. </li>
     <br> <br>
    <li> <i> Remote Config: </i> Change behaviour or appearance of app without publishing an app update.
     <img src="https://user-images.githubusercontent.com/109460490/217028334-4f6222a0-8444-44ce-8755-6a766aa1bd72.png" alt ="loading"> </li>
      <br> <br>                                                                                                                               
     <li> <i> A/B Testing: </i>   Test new feature with small group of users.
-     <img src ="https://user-images.githubusercontent.com/109460490/217029584-8896351e-14e4-4325-9061-8b3d48b9da8f.png" alt="loading" > < /li>                            <li> <i>                                                                                              
+     <img src ="https://user-images.githubusercontent.com/109460490/217029584-8896351e-14e4-4325-9061-8b3d48b9da8f.png" alt="loading" > < /li>                                                                                                                        
                                                                                                                                      
 
   </ul>

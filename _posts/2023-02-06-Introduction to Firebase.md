@@ -13,7 +13,7 @@
 <br> <br>
 <b> Features of Firebase </b>
 <ul> <li> <i> Firebase Authentication: </i> 
-  <img>
+  <img src ="https://user-images.githubusercontent.com/109460490/217018757-00f77560-25cf-4196-91c5-e2ccc488cb19.png" alt ="loading">
 ![image](https://user-images.githubusercontent.com/109460490/217018757-00f77560-25cf-4196-91c5-e2ccc488cb19.png) </img>
 <br> 
   ![image](https://user-images.githubusercontent.com/109460490/217019386-78cd3df3-e4ec-4860-b7dc-fac072fe8d88.png)

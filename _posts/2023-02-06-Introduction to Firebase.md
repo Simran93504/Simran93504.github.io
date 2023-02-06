@@ -14,11 +14,8 @@
 <b> Features of Firebase </b>
 <ul> <li> <i> Firebase Authentication: </i> 
   <img src ="https://user-images.githubusercontent.com/109460490/217018757-00f77560-25cf-4196-91c5-e2ccc488cb19.png" alt ="loading">
-
- 
-  <img src = "https://user-images.githubusercontent.com/109460490/217019386-78cd3df3-e4ec-4860-b7dc-fac072fe8d88.png" alt= "loading>
-
-  <img src="https://user-images.githubusercontent.com/109460490/217019540-1035ff36-5606-4ff7-9b5c-c2502a147bd4.png" alt="loading> </li>
+<br>
+  </li>
 <br> <br>
   <li> <i> Firebase Database: </i>
     <img src = "https://user-images.githubusercontent.com/109460490/217020588-b867a8b0-5678-4569-864b-8a82a9efca14.png " alt= "loading" >
@@ -35,13 +32,13 @@
   <img src = "https://user-images.githubusercontent.com/109460490/217023097-b8538ae4-52a7-4689-bece-0b90fa1b5606.png" alt = "loading"> </li> 
   <br> <br>
   <li> <i> Firebase Test Lab: </i> 
-    <img src ="https://user-images.githubusercontent.com/109460490/217027286-54fcd21a-ce40-4b4c-82a7-e4411263d27c.png" alt = loading"> </li>
+    <img src ="https://user-images.githubusercontent.com/109460490/217033265-ba5fa257-09a8-4186-b6f7-96b3adffb6a2.png" alt = loading"> </li>
     <br> <br>
    <li> <i> Remote Config: </i> Change behaviour or appearance of app without publishing an app update.
     <img src="https://user-images.githubusercontent.com/109460490/217028334-4f6222a0-8444-44ce-8755-6a766aa1bd72.png" alt ="loading"> </li>
      <br> <br>                                                                                                                               
     <li> <i> A/B Testing: </i>   Test new feature with small group of users.
-     <img src ="https://user-images.githubusercontent.com/109460490/217029584-8896351e-14e4-4325-9061-8b3d48b9da8f.png" alt="loading" > < /li>                                                                                                                         
+     <img src ="https://user-images.githubusercontent.com/109460490/217029584-8896351e-14e4-4325-9061-8b3d48b9da8f.png" alt="loading" > < /li>                            <li> <i>                                                                                              
                                                                                                                                      
 
   </ul>

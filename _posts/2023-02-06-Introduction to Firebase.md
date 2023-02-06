@@ -4,8 +4,38 @@
     <li>It helps developers to build their apps faster and in a more secure way.</li>
     <li>No programming is required on the firebase side which makes it easy to use its features more efficiently.</li>
     <li>It provides cloud storage. It uses NoSQL for the database for the storage of data.</li> </ul>
- 
+ <br> <br>
   <b> Commonly Faced Challenges </b>
   ![image](https://user-images.githubusercontent.com/109460490/217017761-a2a33070-96f0-4ec2-8b43-05b89d062062.png)
-![image](https://user-images.githubusercontent.com/109460490/217017922-77a9b040-41a7-4c16-8c96-e9d7ed107e8f.png)
+  <br> <br>
+  <b> Mobile App Requirements </b>
 ![image](https://user-images.githubusercontent.com/109460490/217017960-f33de25e-2bfd-4aed-98fb-bd8bf4c4d9d6.png)
+<br> <br>
+<b> Features of Firebase </b>
+<ul> <li> <i> Firebase Authentication: </i> 
+![image](https://user-images.githubusercontent.com/109460490/217018757-00f77560-25cf-4196-91c5-e2ccc488cb19.png)
+<br> 
+  ![image](https://user-images.githubusercontent.com/109460490/217019386-78cd3df3-e4ec-4860-b7dc-fac072fe8d88.png)
+<br>
+  ![image](https://user-images.githubusercontent.com/109460490/217019540-1035ff36-5606-4ff7-9b5c-c2502a147bd4.png) </li>
+<br> <br>
+  <li> <i> Firebase Database: </i>
+    ![image](https://user-images.githubusercontent.com/109460490/217020588-b867a8b0-5678-4569-864b-8a82a9efca14.png)
+
+    There are two types of firebase databases <i> Realtime Database </i> and <i> Cloud Firestore </i>
+    <b> Realtime Database : </b> The Firebase Realtime Database is a cloud-based NoSQL database that manages your data at the blazing speed of milliseconds. In simplest term, it can be considered as a big JSON file.
+    <b> Cloud Firestore: </b> The cloud Firestore is a NoSQL document database that provides services like store, sync, and query through the application on a global scale. ![image](https://user-images.githubusercontent.com/109460490/217021750-d67ac025-0d85-43ef-bd8f-1994d63a6300.png)
+  </li>
+  <br> <br>
+  <li> <i> Firebase Cloud Storage: </i> 
+    Cloud Storage is built for application developers who need to store and serve user-generated content, usually big files like photos or videos.</li>
+  <br> <br>
+  <li> <i> Firebase Cloud Functions: </i> 
+  ![image](https://user-images.githubusercontent.com/109460490/217023097-b8538ae4-52a7-4689-bece-0b90fa1b5606.png)
+</li> 
+  <br> <br>
+  <
+    
+
+
+

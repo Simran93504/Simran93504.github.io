@@ -1,4 +1,4 @@
-<b>### What is Firebase? </b>
+<b># What is Firebase? </b>
   <ul>
     <li>Firebase is a product of Google which helps developers to build, manage, and grow their apps easily.</li>
     <li>It helps developers to build their apps faster and in a more secure way.</li>
@@ -38,10 +38,21 @@
     <img src="https://user-images.githubusercontent.com/109460490/217028334-4f6222a0-8444-44ce-8755-6a766aa1bd72.png" alt ="loading"> </li>
      <br> <br>                                                                                                                               
     <li> <i> A/B Testing: </i>   Test new feature with small group of users.
-     <img src ="https://user-images.githubusercontent.com/109460490/217029584-8896351e-14e4-4325-9061-8b3d48b9da8f.png" alt="loading" > < /li>                                                                                                                        
+     <img src ="https://user-images.githubusercontent.com/109460490/217029584-8896351e-14e4-4325-9061-8b3d48b9da8f.png" alt="loading" > </li>                             <li> <i> In- App Messaging: </i> Send message to Active users.
+  <img src ="https://user-images.githubusercontent.com/109460490/217041902-a32e3a42-adc4-4a2c-aea2-310433ffbec1.png" alt="loading"> </li>
+  <br> <br>
+  <li> <br>
+    <img src= "https://user-images.githubusercontent.com/109460490/217042319-562c50cb-5352-4630-8b76-8c3a590ef6c2.png" alt="loading" > </li>
+
+    
+
+  
                                                                                                                                      
 
   </ul>
+  ## Brands that Use Firebase 
+  <img src="https://user-images.githubusercontent.com/109460490/217043321-3925ccb6-4cc2-4c42-8038-cd9e37e75b03.png" alt ="loading" >
+
     
 
 

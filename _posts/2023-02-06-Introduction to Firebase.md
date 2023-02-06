@@ -28,29 +28,29 @@
   <li> <i> Firebase Cloud Storage: </i> 
     Cloud Storage is built for application developers who need to store and serve user-generated content, usually big files like photos or videos.</li>
   <br> <br>
-  <li> <i> Firebase Cloud Functions: </i> 
+  <li> <i> Firebase Cloud Functions: </i> <br>
   <img src = "https://user-images.githubusercontent.com/109460490/217023097-b8538ae4-52a7-4689-bece-0b90fa1b5606.png" alt = "loading"> </li> 
   <br> <br>
   <li> <i> Firebase Test Lab: </i> 
     Firebase Test Lab is a cloud-based app testing infrastructure that lets you test your app on a range of devices and configurations, so you can get a better idea of how it'll perform in the hands of live users. </li>
     <br> <br>
-   <li> <i> Remote Config: </i> Change behaviour or appearance of app without publishing an app update.
+   <li> <i> Remote Config: </i> Change behaviour or appearance of app without publishing an app update.<br>
     <img src="https://user-images.githubusercontent.com/109460490/217028334-4f6222a0-8444-44ce-8755-6a766aa1bd72.png" alt ="loading"> </li>
      <br> <br>                                                                                                                               
-    <li> <i> A/B Testing: </i>   Test new feature with small group of users.
+    <li> <i> A/B Testing: </i>   Test new feature with small group of users. <br>
      <img src ="https://user-images.githubusercontent.com/109460490/217029584-8896351e-14e4-4325-9061-8b3d48b9da8f.png" alt="loading" > </li>                             <li> <i> In- App Messaging: </i> Send message to Active users.
   <img src ="https://user-images.githubusercontent.com/109460490/217041902-a32e3a42-adc4-4a2c-aea2-310433ffbec1.png" alt="loading"> </li>
   <br> <br>
   <li> <br>
     <img src= "https://user-images.githubusercontent.com/109460490/217042319-562c50cb-5352-4630-8b76-8c3a590ef6c2.png" alt="loading" > </li>
-
+<br> <br>
     
 
   
                                                                                                                                      
 
   </ul>
-  <b> Brands that Use Firebase </b>
+  <b> Brands that Use Firebase </b><br>
   <img src="https://user-images.githubusercontent.com/109460490/217043321-3925ccb6-4cc2-4c42-8038-cd9e37e75b03.png" alt ="loading" >
 
     

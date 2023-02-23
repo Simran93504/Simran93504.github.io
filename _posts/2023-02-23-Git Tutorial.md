@@ -26,6 +26,6 @@ For Windows, you can use Git bash, which comes included in Git for Windows. For 
 
 The first thing we need to do, is to check if Git is properly installed:
 
-''' simran@LAPTOP-N3JFRHHJ MINGW64 ~
+``` simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ git --version
-git version 2.39.0.windows.2 '''
+git version 2.39.0.windows.2 ```

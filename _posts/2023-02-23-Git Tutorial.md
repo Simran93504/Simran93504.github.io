@@ -30,3 +30,97 @@ The first thing we need to do, is to check if Git is properly installed:
 $ git --version
 git version 2.39.0.windows.2 
 ```
+## Configure Git
+Now let Git know who you are.
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~
+$ git config --global user.name "Simran"
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~
+$ git config --global user.email "simranies888@gmail.com"
+```
+## Creating Git Folder
+Now, let's create a new folder for our project:
+
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~
+$ mkdir myproject
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~
+$ cd myproject
+
+```
+**mkdir** makes a new directory.
+
+**cd** changes the current working directory.
+
+## Initialize Git
+Once you have navigated to the correct folder, you can initialize Git on that folder:
+
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject
+$ git init
+Initialized empty Git repository in C:/Users/simra/myproject/.git/
+```
+## Git Adding New Files
+You just created your first local Git repo. But it is empty.
+
+So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created.
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ ls
+index.html
+```
+Then we check the Git status and see if it is a part of our repo:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+## Git Staging Environment
+As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.
+
+Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.
+
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git add index.html
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+```
+You can also stage more than one file at a time. Let's add 2 more files to our working folder.
+
+```
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git add .
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   index.html
+
+```

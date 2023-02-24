@@ -396,3 +396,136 @@ To https://github.com/Simran93504/gitTutorial.git
 branch 'master' set up to track 'origin/master'.
 ```
 Now, go back into GitHub and see that the repository has been updated.
+# Git Pull from GitHub
+### Pulling to Keep up-to-date with Changes
+When working as a team on a project, it is important that everyone stays up to date.
+
+Any time you start working on a project, you should get the most recent changes to your local copy.
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git pull origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 685 bytes | 27.00 KiB/s, done.
+From https://github.com/Simran93504/gitTutorial
+   9b3d6a2..4480238  master     -> origin/master
+Updating 9b3d6a2..4480238
+Fast-forward
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+```
+# Git Push to GitHub
+## Push Changes to GitHub
+Let's try making some changes to our local git and pushing them to GitHub.
+After making changes commit them:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git commit -a -m "updated"
+[master 1108bf1] updated
+ 1 file changed, 1 insertion(+)
+```
+Now push our changes to our remote origin:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Simran93504/gitTutorial.git
+   4480238..1108bf1  master -> master
+```
+# Git GitHub Branch
+## Create a New Branch on GitHub
+On GitHub, access your repository and click the "master" branch button.
+
+There you can create a new Branch. Type in a descriptive name, and click Create branch
+Start working on an existing file in this branch. Click the "index.html" file and start editing.
+After you have finished editing the file, you can click the "Preview changes" tab to see the changes you made highlighted.
+Now commit with a comment.
+
+# Git Pull Branch from GitHub
+## Pulling a Branch from GitHub
+Now continue working on our new branch in our local Git.
+
+Lets pull from our GitHub repository again so that our code is up-to-date:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 716 bytes | 29.00 KiB/s, done.
+From https://github.com/Simran93504/gitTutorial
+ * [new branch]      forchanges -> origin/forchanges
+Already up to date.
+```
+Lets check where we are working at the moment:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git branch
+* master
+```
+So, we do not have the new branch on our local Git. But we know it is available on GitHub. So we can use the -a option to see all local and remote branches:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git branch -a
+* master
+  remotes/origin/forchanges
+  remotes/origin/master
+```
+# Git Push Branch to GitHub
+## Push a Branch to GitHub
+Let's try to create a new local branch, and push that to Github
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git checkout -b local
+Switched to a new branch 'local'
+```
+And we make some changes to the README.md file. Just add a new line
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git status
+On branch local
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git add README.md
+```
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git commit -m "updated local"
+[local e0606b3] updated local
+ 1 file changed, 1 insertion(+)
+```
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git push origin local
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 161.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'local' on GitHub by visiting:
+remote:      https://github.com/Simran93504/gitTutorial/pull/new/local
+remote:
+To https://github.com/Simran93504/gitTutorial.git
+ * [new branch]      local -> local
+```
+Go to Github, Branches, and confirm that the repository has a new branch:

@@ -541,3 +541,127 @@ To https://github.com/Simran93504/gitTutorial.git
  * [new branch]      local -> local
 ```
 Go to Github, Branches, and confirm that the repository has a new branch:
+
+# Git Contribute
+
+## Git GitHub Fork
+At the heart of Git is collaboration. However, Git does not allow you to add code to someone else's repository without access rights.
+A fork is a copy of a repository. This is useful when you want to contribute to someone else's project or start your own project based on theirs.
+
+fork is not a command in Git, but something offered in GitHub and other repository hosts. Let's start by logging in to GitHub, and fork a repository.
+
+## Git Clone from GitHub
+### Clone a Fork from GitHub
+Now we have our own fork, but only on GitHub. We also want a clone on our local Git to keep working on it.
+
+A clone is a full copy of a repository, including all logging and versions of files.
+
+Move back to the original repository, and click the green "Code" button to get the URL to clone:
+<br>
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~
+$ git clone https://github.com/hivaibhav123/cv.git
+Cloning into 'cv'...
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 21 (delta 4), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (21/21), 598.27 KiB | 470.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute
+$ ls
+cv/
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute
+$ cd cv
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+```
+<br>
+### Configuring Remotes
+Basically, we have a full copy of a repository, whose origin we are not allowed to make changes to.
+
+Let's see how the remotes of this Git is set up:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git remote -v
+origin  https://github.com/hivaibhav123/cv.git (fetch)
+origin  https://github.com/hivaibhav123/cv.git (push)
+```
+We see that origin is set up to the original "hivaibhav123" repository, we also want to add our own fork.
+First, we rename the original origin remote:
+```
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git remote rename origin upstream
+Renaming remote references: 100% (3/3), done.
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git remote -v
+upstream        https://github.com/hivaibhav123/cv.git (fetch)
+upstream        https://github.com/hivaibhav123/cv.git (push)
+```
+Then fetch the URL of our own fork And add that as origin:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git remote add origin https://github.com/Simran93504/cv-1.git
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git remote -v
+origin  https://github.com/Simran93504/cv-1.git (fetch)
+origin  https://github.com/Simran93504/cv-1.git (push)
+upstream        https://github.com/hivaibhav123/cv.git (fetch)
+upstream        https://github.com/hivaibhav123/cv.git (push)
+```
+Now we have 2 remotes:
+
+origin - our own fork, where we have read and write access
+upstream - the original, where we have read-only access
+
+## Git GitHub Send Pull Request
+### Push Changes to Our GitHub Fork
+We have made a lot of changes to our local Git.
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git status
+On branch main
+Your branch is up to date with 'upstream/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git add index.html
+
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git commit -m "contribution"
+[main 901e30e] contribution
+ 1 file changed, 1 insertion(+)
+```
+Now we push them to our GitHub fork:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Simran93504/cv-1.git
+   ca4f8f0..901e30e  main -> main
+```
+Go to GitHub, and we see that the repository has a new commit. And we can send a Pull Request to the original repository
+Click that and create a pull request

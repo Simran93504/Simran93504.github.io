@@ -51,7 +51,6 @@ $ mkdir myproject
 
 simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ cd myproject
-
 ```
 <br>
 **mkdir** makes a new directory.
@@ -65,18 +64,21 @@ Once you have navigated to the correct folder, you can initialize Git on that fo
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject
 $ git init
 Initialized empty Git repository in C:/Users/simra/myproject/.git/
-``` <br>
+```
+
 ## Git Adding New Files
 You just created your first local Git repo. But it is empty.
 
-So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created. <br>
+So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created.
+<br>
 
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
 $ ls
 index.html
 ```
-Then we check the Git status and see if it is a part of our repo: <br>
+Then we check the Git status and see if it is a part of our repo: 
+<br>
 
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)

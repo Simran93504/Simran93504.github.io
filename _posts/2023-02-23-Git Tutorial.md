@@ -368,4 +368,31 @@ $ git branch -d hello
 Deleted branch hello (was d891b47).
 ```
 
-# <u> Git vs Github
+# <u> Git vs Github </u>
+# Git GitHub Getting Started
+- Go to GitHub and sign up for an account:
+- Now that you have made a GitHub account, sign in, and create a new Repo
+
+## Push Local Repository to GitHub
+Copy the URL of your repository 
+Now paste it in the following command:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git remote add origin https://github.com/Simran93504/gitTutorial.git
+```
+Now we are going to push our master branch to the origin url, and set it as the default remote branch:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git push --set-upstream origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 1.64 KiB | 561.00 KiB/s, done.
+Total 16 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Simran93504/gitTutorial.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+```
+Now, go back into GitHub and see that the repository has been updated.

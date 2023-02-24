@@ -52,7 +52,8 @@ $ mkdir myproject
 simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ cd myproject
 
-``` <br>
+```
+<br>
 **mkdir** makes a new directory.
 
 **cd** changes the current working directory.

@@ -92,12 +92,14 @@ Untracked files:
         index.html
 
 nothing added to commit but untracked files present (use "git add" to track)
-```<br>
+```
+<br>
 
 ## Git Staging Environment
 As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.
 
-Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.<br>
+Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.
+<br>
 
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
@@ -113,9 +115,10 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   index.html
 
-``` <br>
+``` 
+<br>
 You can also stage more than one file at a time. Let's add 2 more files to our working folder.
-
+<br>
 ```
 
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
@@ -133,12 +136,12 @@ Changes to be committed:
         new file:   index.html
 
 ```
-
+<br>
 ## Git Commit
 Since we have finished our work, we are ready move from stage to commit for our repo.
 
 Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
-
+<br>
 ```
 
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
@@ -148,10 +151,10 @@ $ git commit -m "this is my first commit"
  create mode 100644 README.md
  create mode 100644 index.html
 ```
-
+<br>
 ## Git Commit Log
 To view the history of commits for a repository, you can use the log command:
-
+<br>
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
 $ git log
@@ -161,7 +164,7 @@ Date:   Thu Feb 23 15:33:21 2023 +0530
 
     this is my first commit
 ```
-
+<br>
 ## Git Help
 There are a couple of different ways you can use the help command in command line:
 

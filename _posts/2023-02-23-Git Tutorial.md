@@ -25,13 +25,15 @@ You can download Git for free from the following website: https://www.git-scm.co
 For Windows, you can use Git bash, which comes included in Git for Windows. For Mac and Linux you can use the built-in terminal.
 
 The first thing we need to do, is to check if Git is properly installed:
-
-``` simran@LAPTOP-N3JFRHHJ MINGW64 ~
+<br>
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ git --version
 git version 2.39.0.windows.2 
 ```
 ## Configure Git
 Now let Git know who you are.
+<br>
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ git config --global user.name "Simran"
@@ -39,9 +41,10 @@ $ git config --global user.name "Simran"
 simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ git config --global user.email "simranies888@gmail.com"
 ```
+<br>
 ## Creating Git Folder
 Now, let's create a new folder for our project:
-
+<br>
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ mkdir myproject
@@ -49,29 +52,31 @@ $ mkdir myproject
 simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ cd myproject
 
-```
+``` <br>
 **mkdir** makes a new directory.
 
 **cd** changes the current working directory.
 
 ## Initialize Git
 Once you have navigated to the correct folder, you can initialize Git on that folder:
-
+<br>
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject
 $ git init
 Initialized empty Git repository in C:/Users/simra/myproject/.git/
-```
+``` <br>
 ## Git Adding New Files
 You just created your first local Git repo. But it is empty.
 
-So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created.
+So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created. <br>
+
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
 $ ls
 index.html
 ```
-Then we check the Git status and see if it is a part of our repo:
+Then we check the Git status and see if it is a part of our repo: <br>
+
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
 $ git status
@@ -84,11 +89,12 @@ Untracked files:
         index.html
 
 nothing added to commit but untracked files present (use "git add" to track)
-```
+```<br>
+
 ## Git Staging Environment
 As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.
 
-Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.
+Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.<br>
 
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
@@ -104,7 +110,7 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   index.html
 
-```
+``` <br>
 You can also stage more than one file at a time. Let's add 2 more files to our working folder.
 
 ```

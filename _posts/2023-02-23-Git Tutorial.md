@@ -31,7 +31,7 @@ simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ git --version
 git version 2.39.0.windows.2 
 ```
-## Configure Git
+# Configure Git
 Now let Git know who you are.
 <br>
 ```
@@ -42,7 +42,7 @@ simran@LAPTOP-N3JFRHHJ MINGW64 ~
 $ git config --global user.email "simranies888@gmail.com"
 ```
 <br>
-## Creating Git Folder
+# Creating Git Folder
 Now, let's create a new folder for our project:
 <br>
 ```
@@ -57,7 +57,7 @@ $ cd myproject
 
 **cd** changes the current working directory.
 
-## Initialize Git
+# Initialize Git
 Once you have navigated to the correct folder, you can initialize Git on that folder:
 <br>
 ```
@@ -66,7 +66,7 @@ $ git init
 Initialized empty Git repository in C:/Users/simra/myproject/.git/
 ```
 
-## Git Adding New Files
+# Git Adding New Files
 You just created your first local Git repo. But it is empty.
 
 So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created.
@@ -95,7 +95,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 <br>
 
-## Git Staging Environment
+# Git Staging Environment
 As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.
 
 Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.
@@ -137,7 +137,7 @@ Changes to be committed:
 
 ```
 <br>
-## Git Commit
+# Git Commit
 Since we have finished our work, we are ready move from stage to commit for our repo.
 
 Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
@@ -152,7 +152,7 @@ $ git commit -m "this is my first commit"
  create mode 100644 index.html
 ```
 <br>
-## Git Commit Log
+# Git Commit Log
 To view the history of commits for a repository, you can use the log command:
 <br>
 ```
@@ -165,13 +165,13 @@ Date:   Thu Feb 23 15:33:21 2023 +0530
     this is my first commit
 ```
 <br>
-## Git Help
+# Git Help
 There are a couple of different ways you can use the help command in command line:
 
 - git command -help -  See all the available options for the specific command
 - git help --all -  See all possible commands
 
-# Working with Git Branches
+## Working with Git Branches
 In Git, a branch is a new/separate version of the main repository.
 
 Let's say you have a large project, and you need to update the design on it.
@@ -187,7 +187,7 @@ Branches allow you to work on different parts of a project without impacting the
 
 When the work is complete, a branch can be merged with the main project.
 
-## New Git Branch
+# New Git Branch
 
 Let add some new features to our index.html page.
 
@@ -235,7 +235,7 @@ $ git commit -m "some changes of new branch"
  1 file changed, 2 insertions(+), 1 deletion(-)
 ```
 
-## Emergency Branch
+# Emergency Branch
 Now imagine that we are not yet done with hello-world-images, but we need to fix an error on master.
 
 I don't want to mess with master directly, and I do not want to mess with hello-world-images, since it is not done yet.
@@ -270,9 +270,9 @@ $ git commit -m "small error resolved"
  1 file changed, 2 insertions(+), 2 deletions(-)
 ```
 
-# Git Branch Merge
+### Git Branch Merge
 
-### Merge Branches
+# Merge Branches
 We have the emergency fix ready, and so let's merge the master and emergency-fix branches.
 
 First, we need to change to the master branch:
@@ -292,7 +292,7 @@ simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
 $ git branch -d emergency-fix
 Deleted branch emergency-fix (was f26339d).
 ```
-# Merge Conflict
+## Merge Conflict
 Now we can move over to hello and keep working.
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
@@ -380,12 +380,12 @@ $ git branch -d hello
 Deleted branch hello (was d891b47).
 ```
 
-# <u> Git vs Github </u>
-# Git GitHub Getting Started
+### <u> Git vs Github </u>
+## Git GitHub Getting Started
 - Go to GitHub and sign up for an account:
 - Now that you have made a GitHub account, sign in, and create a new Repo
 
-## Push Local Repository to GitHub
+# Push Local Repository to GitHub
 Copy the URL of your repository 
 Now paste it in the following command:
 ```
@@ -408,8 +408,8 @@ To https://github.com/Simran93504/gitTutorial.git
 branch 'master' set up to track 'origin/master'.
 ```
 Now, go back into GitHub and see that the repository has been updated.
-# Git Pull from GitHub
-### Pulling to Keep up-to-date with Changes
+## Git Pull from GitHub
+# Pulling to Keep up-to-date with Changes
 When working as a team on a project, it is important that everyone stays up to date.
 
 Any time you start working on a project, you should get the most recent changes to your local copy.
@@ -428,8 +428,8 @@ Fast-forward
  README.md | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
 ```
-# Git Push to GitHub
-## Push Changes to GitHub
+## Git Push to GitHub
+# Push Changes to GitHub
 Let's try making some changes to our local git and pushing them to GitHub.
 After making changes commit them:
 ```
@@ -452,8 +452,8 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Simran93504/gitTutorial.git
    4480238..1108bf1  master -> master
 ```
-# Git GitHub Branch
-## Create a New Branch on GitHub
+## Git GitHub Branch
+# Create a New Branch on GitHub
 On GitHub, access your repository and click the "master" branch button.
 
 There you can create a new Branch. Type in a descriptive name, and click Create branch
@@ -461,8 +461,8 @@ Start working on an existing file in this branch. Click the "index.html" file an
 After you have finished editing the file, you can click the "Preview changes" tab to see the changes you made highlighted.
 Now commit with a comment.
 
-# Git Pull Branch from GitHub
-## Pulling a Branch from GitHub
+## Git Pull Branch from GitHub
+# Pulling a Branch from GitHub
 Now continue working on our new branch in our local Git.
 
 Lets pull from our GitHub repository again so that our code is up-to-date:
@@ -492,8 +492,8 @@ $ git branch -a
   remotes/origin/forchanges
   remotes/origin/master
 ```
-# Git Push Branch to GitHub
-## Push a Branch to GitHub
+## Git Push Branch to GitHub
+# Push a Branch to GitHub
 Let's try to create a new local branch, and push that to Github
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
@@ -542,16 +542,16 @@ To https://github.com/Simran93504/gitTutorial.git
 ```
 Go to Github, Branches, and confirm that the repository has a new branch:
 
-# Git Contribute
+## Git Contribute
 
-## Git GitHub Fork
+# Git GitHub Fork
 At the heart of Git is collaboration. However, Git does not allow you to add code to someone else's repository without access rights.
 A fork is a copy of a repository. This is useful when you want to contribute to someone else's project or start your own project based on theirs.
 
 fork is not a command in Git, but something offered in GitHub and other repository hosts. Let's start by logging in to GitHub, and fork a repository.
 
-## Git Clone from GitHub
-### Clone a Fork from GitHub
+### Git Clone from GitHub
+## Clone a Fork from GitHub
 Now we have our own fork, but only on GitHub. We also want a clone on our local Git to keep working on it.
 
 A clone is a full copy of a repository, including all logging and versions of files.
@@ -585,7 +585,7 @@ nothing to commit, working tree clean
 
 ```
 <br>
-### Configuring Remotes
+# Configuring Remotes
 Basically, we have a full copy of a repository, whose origin we are not allowed to make changes to.
 
 Let's see how the remotes of this Git is set up:
@@ -625,8 +625,8 @@ Now we have 2 remotes:
 origin - our own fork, where we have read and write access
 upstream - the original, where we have read-only access
 
-## Git GitHub Send Pull Request
-### Push Changes to Our GitHub Fork
+### Git GitHub Send Pull Request
+## Push Changes to Our GitHub Fork
 We have made a lot of changes to our local Git.
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/contribute/cv (main)

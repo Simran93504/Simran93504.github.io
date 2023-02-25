@@ -272,7 +272,7 @@ $ git commit -m "small error resolved"
 
 # Git Branch Merge
 
-## Merge Branches
+### Merge Branches
 We have the emergency fix ready, and so let's merge the master and emergency-fix branches.
 
 First, we need to change to the master branch:

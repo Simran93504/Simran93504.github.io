@@ -16,12 +16,12 @@ Coding collaboration <br>
 - You can revert back to any previous commit.
 - Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!
 
-# Git Getting Started
+## Git Getting Started
 
-## Git Install
+# Git Install
 You can download Git for free from the following website: https://www.git-scm.com/
 
-## Using Git with Command Line
+# Using Git with Command Line
 For Windows, you can use Git bash, which comes included in Git for Windows. For Mac and Linux you can use the built-in terminal.
 
 The first thing we need to do, is to check if Git is properly installed:

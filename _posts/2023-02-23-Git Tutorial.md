@@ -413,6 +413,40 @@ Now, go back into GitHub and see that the repository has been updated.
 When working as a team on a project, it is important that everyone stays up to date.
 
 Any time you start working on a project, you should get the most recent changes to your local copy.
+With Git, you can do that with pull.
+
+pull is a combination of 2 different commands:
+
++ fetch
++ merge
+Let's take a closer look into how fetch, merge, and pull works.
+# Git Fetch
+fetch gets all the change history of a tracked branch/repo.
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 685 bytes | 27.00 KiB/s, done.
+From https://github.com/Simran93504/gitTutorial
+   9b3d6a2..4480238  master     -> origin/master
+```
+# Git Merge
+merge combines the current branch, with a specified branch.
+
+We have confirmed that the updates are as expected, and we can merge our current branch (master) with origin/master:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
+$ git merge origin/master
+Updating e0b6038..d29d69f
+Fast-forward
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+```
+# Git Pull
+pull is a combination of fetch and merge. It is used to pull all
 ```
 simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (master)
 $ git pull origin
@@ -665,3 +699,95 @@ To https://github.com/Simran93504/cv-1.git
 ```
 Go to GitHub, and we see that the repository has a new commit. And we can send a Pull Request to the original repository
 Click that and create a pull request
+
+### Git Undo
+## Git Revert
+revert is the command we use when we want to take a previous commit and add it as a new commit, keeping the log intact.
+Step 1: Find the previous commit:
+![image](https://user-images.githubusercontent.com/109460490/223332633-b173071f-80f8-4593-9ba6-0208a78230b8.png)
+Step 2: Use it to make a new commit:
+![image](https://user-images.githubusercontent.com/109460490/223332699-9c8b29c8-2ec7-4db4-ad58-9db693c24e01.png)
+Let's make a new commit
+
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git commit -m "Just a regular update, definitely no accidents here..."
+[master 16a6f19] Just a regular update, definitely no accidents here...
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ ```
+ ## Git Revert Find Commit in Log
+ First thing, we need to find the point we want to return to. To do that, we  need to go through the log.
+
+To avoid the very long log list, we are going to use the --oneline option, which gives just one line per commit showing:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git log --oneline
+52418f7 (HEAD -> master) Just a regular update, definitely no accidents here...
+9a9add8 (origin/master) Added .gitignore
+81912ba Corrected spelling error
+dfa79db updated index.html with emergency fix
+0312c55 Added image to Hello World
+09f4acd Updated index.html with a new line
+221ec6e First release of Hello World!
+```
+## Git Revert HEAD
+We revert the latest commit using git revert HEAD (revert the latest change,  and then commit), adding the option --no-edit to skip the commit message editor (getting the default revert message):
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git revert HEAD --no-edit
+[master e56ba1f] Revert "Just a regular update, definitely no accidents here..."
+ Date: Thu Apr 22 10:50:13 2021 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ ```
+ ## Git Reset
+ reset is the command we use when we want to move the repository back to a previous commit, discarding any changes made after that commit.
+
+Step 1: Find the previous commit:
+![image](https://user-images.githubusercontent.com/109460490/223338952-864b7097-224b-441f-b13b-51fce5b5f76a.png)
+
+Step 2: Move the repository back to that step:
+![image](https://user-images.githubusercontent.com/109460490/223339451-8c6f03a4-2f10-4570-bf26-212480d66798.png)
+
+## Git Reset Find Commit in Log
+ First thing, we need to find the point we want to return to. To do that, we need to go through the log.
+ ```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git commit -m "Just a regular update, definitely no accidents here..."
+[master 16a6f19] Just a regular update, definitely no accidents here...
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ ```
+ ## Git Revert Find Commit in Log
+ First thing, we need to find the point we want to return to. To do that, we  need to go through the log.
+
+To avoid the very long log list, we are going to use the --oneline option, which gives just one line per commit showing:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git log --oneline
+52418f7 (HEAD -> master) Just a regular update, definitely no accidents here...
+9a9add8 (origin/master) Added .gitignore
+81912ba Corrected spelling error
+dfa79db updated index.html with emergency fix
+0312c55 Added image to Hello World
+09f4acd Updated index.html with a new line
+221ec6e First release of Hello World!
+```
+We want to return to the commit: 9a9add8 (origin/master) Added .gitignore, the last one before we started to mess with things.
+
+## Git Reset
+We reset our repository back to the specific commit using git reset commithash (commithash being the first 7 characters of the commit hash we found in the log):
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git reset 9a9add8
+```
+Now let's check the log again:
+```
+simran@LAPTOP-N3JFRHHJ MINGW64 ~/myproject (local)
+$ git log --oneline
+9a9add8 (origin/master) Added .gitignore
+81912ba Corrected spelling error
+dfa79db updated index.html with emergency fix
+0312c55 Added image to Hello World
+09f4acd Updated index.html with a new line
+221ec6e First release of Hello World!
+```
+

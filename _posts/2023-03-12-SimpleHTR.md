@@ -34,7 +34,8 @@ Init with stored values from ../model/snapshot-13 <br>
 Recognized: "fnd"  <br>
 Probability: 0.026317203417420387  <br>
 
-But when resized my image according to that sample image it was nearly able to recognize
+But when resized my image according to that sample image it was nearly able to recognize <br>
+
 ![wordtest](https://user-images.githubusercontent.com/109460490/224548457-fa9dddf7-a555-4642-bbc8-9d1fd2ed6241.jpg)
 
 Init with stored values from ../model/snapshot-13 <br>

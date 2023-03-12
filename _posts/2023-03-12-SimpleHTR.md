@@ -25,3 +25,11 @@ Probability: 0.6674368977546692
 Init with stored values from ../model/snapshot-13
 Recognized: "word"
 Probability: 0.9806373119354248
+
+## Unable to Recognize Other Images
+
+![image](https://user-images.githubusercontent.com/109460490/224543868-a39a063a-316e-4da9-950f-c1e4a7a29462.png)
+
+Init with stored values from ../model/snapshot-13
+Recognized: "fnd"
+Probability: 0.026317203417420387

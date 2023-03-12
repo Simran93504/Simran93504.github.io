@@ -11,7 +11,7 @@ Handwritten Text Recognition (HTR) system implemented with TensorFlow (TF) and t
       
 + Put the contents of the downloaded zip-file into the model directory of the repository
 + Go to the src directory 
-+ Go to main.py and install required packages numpy, tensorflow, editpath using pip install
++ Go to main.py and install required packages numpy, tensorflow, editpath, OpenCV using pip install
 + The input images, and the expected outputs are shown below when the text line model is used.
 
 ![image](https://user-images.githubusercontent.com/109460490/224541233-70854301-21b6-4890-ac05-2e0254b61cba.png)

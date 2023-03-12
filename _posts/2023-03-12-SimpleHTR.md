@@ -16,25 +16,28 @@ Handwritten Text Recognition (HTR) system implemented with TensorFlow (TF) and t
 
 ![image](https://user-images.githubusercontent.com/109460490/224541233-70854301-21b6-4890-ac05-2e0254b61cba.png)
 
-Init with stored values from ../model/snapshot-13
-Recognized: "or work on line level"
-Probability: 0.6674368977546692
+Init with stored values from ../model/snapshot-13  <br>
+Recognized: "or work on line level"  <br>
+Probability: 0.6674368977546692  <br>
 
 ![image](https://user-images.githubusercontent.com/109460490/224541221-5febe748-4b36-4d29-9d31-cc81e865c387.png)
 
-Init with stored values from ../model/snapshot-13
-Recognized: "word"
-Probability: 0.9806373119354248
+Init with stored values from ../model/snapshot-13  <br>
+Recognized: "word"  <br>
+Probability: 0.9806373119354248  <br>
 
 ## Unable to Recognize Every Image
 
 ![image](https://user-images.githubusercontent.com/109460490/224543868-a39a063a-316e-4da9-950f-c1e4a7a29462.png)
 
-Init with stored values from ../model/snapshot-13
-Recognized: "fnd"
-Probability: 0.026317203417420387
+Init with stored values from ../model/snapshot-13 <br>
+Recognized: "fnd"  <br>
+Probability: 0.026317203417420387  <br>
 
 But when resized my image according to that sample image it was nearly able to recognize
-Init with stored values from ../model/snapshot-13
-Recognized: "wword"
-Probability: 0.6883667707443237
+![wordtest](https://user-images.githubusercontent.com/109460490/224548457-fa9dddf7-a555-4642-bbc8-9d1fd2ed6241.jpg)
+
+Init with stored values from ../model/snapshot-13 <br>
+Recognized: "wword"  <br>
+Probability: 0.6883667707443237  <br>
+

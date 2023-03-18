@@ -790,4 +790,20 @@ dfa79db updated index.html with emergency fix
 09f4acd Updated index.html with a new line
 221ec6e First release of Hello World!
 ```
+### * Warning: Messing with the commit history of a repository can be dangerous. It is usually ok to make these kinds of changes to your own local repository. However, you should avoid making changes that rewrite history to remote repositories, especially if others are working with them.*
 
+## Git Amend
+
+### Git commit --amend
+
+commit --amend is used to modify the most recent commit.
+It combines changes in the staging environment with the latest commit, and creates a new commit.
+This new commit replaces the latest commit entirely.
+
+```
+simran@Explora MINGW64 ~/contribute/cv (main)
+$ git commit --amend -m "Added lines to README.md"
+[main a983adb] Added lines to README.md
+ Date: Fri Feb 24 22:30:48 2023 +0530
+ 1 file changed, 1 insertion(+)
+```

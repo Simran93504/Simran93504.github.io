@@ -790,7 +790,7 @@ dfa79db updated index.html with emergency fix
 09f4acd Updated index.html with a new line
 221ec6e First release of Hello World!
 ```
-### * Warning: Messing with the commit history of a repository can be dangerous. It is usually ok to make these kinds of changes to your own local repository. However, you should avoid making changes that rewrite history to remote repositories, especially if others are working with them.*
+# * Warning: Messing with the commit history of a repository can be dangerous. It is usually ok to make these kinds of changes to your own local repository. However, you should avoid making changes that rewrite history to remote repositories, especially if others are working with them.*
 
 ## Git Amend
 

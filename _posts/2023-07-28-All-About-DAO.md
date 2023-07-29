@@ -56,3 +56,33 @@ Some popular DAO Treasury Tools are:
 ### 7. Create a Community
 An interactive, engaged, and strong community can help in the constant expansion of the DAO project. The success of a DAO project largely depends on how freely the community is able to participate in the decision-making and management of the DAO project.
 
+# How To Destroy a Smart Contract?
+ Using the selfdestruct functionality enables developers to remove smart contracts from the Blockchain.
+ The smart contract life begins with a creation transaction from an EOA or a contract account. On the other end, the final breath of a contract is its destruction. 
+ ```
+selfdestruct(address recipient);
+```
+An important note is that a developer must explicitly add this command to the contract. Otherwise, the smart contract will never be deletable.
+After the contract’s destruction, any transactions sent to that account address do not result in any code execution because there is no longer any code there to execute.
+Deleting a contract does not remove the transaction history (past) of the contract since the blockchain itself is immutable.
+
+## Making a Smart Contract “Mortal”
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.1;
+
+contract Mortal {
+    address public owner;
+
+    // Initialize Contract: set owner
+    constructor() {
+        owner = msg.sender;
+    }
+
+    // Contract destructor
+    function destroy() public {
+        require(msg.sender == owner, "msg.sender is not the owner");
+        selfdestruct(payable(owner));
+    }
+}
+```

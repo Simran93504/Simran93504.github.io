@@ -2,9 +2,9 @@
 In simple words, a DAO is an independent organization managed by the communities. The underlying laws are established via smart contracts that decide the selected course of action to be adopted in the future. The members might at any time openly evaluate DAO’s digital code, cast votes, and give suggestions.
 The entire infrastructure of a DAO blockchain platform is solely managed by its members, who collaborate on key project decisions, including technological improvements and treasury allocations.
 
-### How To Create & Run A DAO?
+# How To Create & Run A DAO?
 ## Steps to Create a DAO:
-# 1. Define the structure of the DAO Project
+### 1. Define the structure of the DAO Project
 - What do you expect your DAO will achieve? What are your goals?
 - Decisions your DAO will make?
 - Is your company ready to accept a community-focused decentralized ownership structure?

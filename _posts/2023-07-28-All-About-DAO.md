@@ -86,4 +86,4 @@ contract Mortal {
     }
 }
 ```
-You can still send transactions to the address and transfer Ether there, but there won't be any code that could send you the Ether back.
+You can still send transactions to the address and transfer Ether there, but there won't be any code that could send you the Ether back. Developers prefer to deploy an updated contract to the Ethereum after destructing the old contract.
